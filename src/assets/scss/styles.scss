@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "./variables.scss";
+@import "./Nullstyles";
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1;
+}
+
+.main-wrapper {
+  padding: 0 20px 0 20px;
+  width: 100%;
+  max-width: 3840px;
+  min-width: 1280px;
+  min-height: 720px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
+
+  &.dark-theme {
+    background-color: $dark-theme-main;
+
+  }
+
+  &.white-theme {
+    background-color: $white-theme-background;
+
+  }
+}
+
+.dark-theme {
+  color: #fff;
+}
+
+.white-theme {
+  .main-block {
+    transition: 0.1s background ease;
+    background-color: $white-theme-background;
+    color: #fff;
+  }
+
+  .user-block {
+    transition: 0.1s all ease;
+    background-color: $white-theme-main;
+    color: #000;
+
+    .toggler__line {
+      background-color: $white-theme-background;
+    }
+
+    .info,
+    .user-item {
+      background-color: $white-theme-background;
+    }
+
+    .user-item {
+      span {
+        color: #000;
+      }
+    }
+  }
+}
+
+.user-block {
+  width: 662px;
+  height: 1080px;
+  background-color: #353d54;
+  padding: 30px 40px;
+  border-radius: 0 20px 20px 0;
+
+}
+
+.main-block {
+  width: 1258px;
+  height: 1080px;
+  background-color: $dark-theme-right;
+}
+
+
+.tests {
+  font-size: 45px;
+  text-align: center;
+  color: $white-theme-main;
+}
+
+.atistation {
+  font-size: 40px;
+  text-align: center;
+  color: $white-theme-main;
+}
