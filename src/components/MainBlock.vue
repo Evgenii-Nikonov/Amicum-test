@@ -36,6 +36,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+@import "@/assets/scss/variables.scss";
+
+.main-block {
+  width: 100%;
+  height: 1080px;
+  background-color: $dark-theme-right;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -44,9 +55,8 @@ export default {
   &__menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 100px;
-    align-self: center;
-    justify-self: center;
+    gap: 5%;
+    justify-items: center;
   }
 }
 

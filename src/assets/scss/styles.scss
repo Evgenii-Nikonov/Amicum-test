@@ -11,29 +11,21 @@ body {
 }
 
 .main-wrapper {
-  padding: 0 20px 0 20px;
   width: 100%;
   max-width: 3840px;
   min-width: 1280px;
-  min-height: 720px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
 
-
   &.dark-theme {
     background-color: $dark-theme-main;
-
+    color: #fff;
   }
 
   &.white-theme {
     background-color: $white-theme-background;
-
   }
-}
-
-.dark-theme {
-  color: #fff;
 }
 
 .white-theme {
@@ -63,23 +55,8 @@ body {
       }
     }
   }
-}
-
-.user-block {
-  width: 662px;
-  height: 1080px;
-  background-color: #353d54;
-  padding: 30px 40px;
-  border-radius: 0 20px 20px 0;
 
 }
-
-.main-block {
-  width: 1258px;
-  height: 1080px;
-  background-color: $dark-theme-right;
-}
-
 
 .tests {
   font-size: 45px;

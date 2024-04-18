@@ -125,7 +125,8 @@ export default {
 @import "@/assets/scss/variables.scss";
 
 .info {
-  width: 582px;
+
+  width: 100%;
   height: 178px;
   background-color: $dark-theme-right;
   padding: 10px 15px;
@@ -133,6 +134,8 @@ export default {
   flex-direction: column;
   row-gap: 10px;
   margin-bottom: 58px;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 
   &__name {
     font-size: 32px;
@@ -229,6 +232,17 @@ export default {
 .user-panel {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 3%;
+  //align-self: center;
+  justify-items: center;
 }
+
+.user-block {
+  width: 87%;
+  height: 1080px;
+  background-color: #353d54;
+  padding: 30px 40px;
+  border-radius: 0 20px 20px 0;
+}
+
 </style>

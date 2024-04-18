@@ -123,11 +123,12 @@ export default {
 
     span {
       max-width: 88px;
-        padding-bottom: 15px;
+      padding-bottom: 15px;
       @extend %center;
     }
   }
 }
+
 .tests {
   span {
     font-size: 40px;
@@ -150,7 +151,8 @@ export default {
 }
 
 .user-item {
-  width: 281px;
+  min-width: 281px;
+  width: 100%;
   height: 260px;
   background-color: $dark-theme-right;
   cursor: pointer;
@@ -158,6 +160,8 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.2);
 
   &__text {
     font-size: 20px;
@@ -193,7 +197,7 @@ svg {
 
   .fullFillSucess {
     stroke-dashoffset: calc(440 - (440 * 100) / 100);
-    stroke:$green-common ;
+    stroke: $green-common;
   }
 
   .fullFillWarning {

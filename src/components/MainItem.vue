@@ -25,15 +25,15 @@ export default {
 .main-item {
   position: relative;
   padding-top: 50px;
-  width: 390px;
+  width: 100%;
+  min-width: 280px;
   height: 300px;
-  background-color: #586c92;
   cursor: pointer;
   transition: 0.3s all;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 35px;
+  gap: 10%;
   background-color: $orange-common;
   border-radius: 5px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -45,6 +45,7 @@ export default {
 
   h2 {
     font-size: 36px;
+
     font-weight: 600;
     text-align: center;
     display: block;
